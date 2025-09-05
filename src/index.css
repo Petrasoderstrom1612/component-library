@@ -4,6 +4,51 @@
   font-weight: 400;
 }
 
+.badges-div{
+  display:flex;
+  flex-direction:column;
+}
+
+.badge{
+  width: 67px;
+  height: 24px;
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  opacity: 1;
+  border:1px solid black;
+  margin-bottom:5px;
+}
+
+.squared{
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* button {
   border-radius: 8px;

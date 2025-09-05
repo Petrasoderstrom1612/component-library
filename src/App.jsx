@@ -1,12 +1,14 @@
 import { useState } from 'react'
+import Badge from './Badges/Badge'
 
 function App() {
 
   return (
     <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="badges-div">
+      <Badge variant="squared">Badge</Badge>
+      <Badge variant="rounded">Badge</Badge>
+    </div>
     </>
   )
 }
