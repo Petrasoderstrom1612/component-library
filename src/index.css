@@ -6,6 +6,11 @@
   padding:2em;
 }
 
+p{
+  margin-block-start: 0;
+  margin-block-end:0;
+}
+
 .h1-badges{
   font-family: Permanent Marker;
   font-weight: 400;
@@ -100,12 +105,64 @@
 }
 
 /***** BANNERS ****/
+.banner-div{
+  display: flex;
+  width: 896;
+  height: 80;
+  opacity: 1;
+  gap: 12px;
+  border-radius: 6px;
+  padding: 16px;
+
+}
+
+.banner-ps-div{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.banner-p-title{
+  font-weight: 500;
+}
+
+.success{
+  background-color: #ECFDF5;
+  color: #065F46;
+}
+
+.warning{
+  background-color: #FFFBEB;
+  color: #92400E;
+}
+
+.error{
+  background-color: #FEF2F2;
+  color: #92400E;
+}
+
+.neutral{
+  background-color: #EFF6FF;
+  color: #1E40AF;
+}
 
 .h1-banners{
   font-family: Permanent Marker;
   font-weight: 400;
   font-size: 44.1px;
   line-height: 63px;
+}
+
+.status-icon-div{
+  margin-right:0.5em;
+}
+
+.banner-div>div>svg{ /*ICON*/
+  width:16px;
+  height: 16px;
+  margin-bottom: -0.1em;
 }
 
 .icon-success{
@@ -123,6 +180,7 @@
 .icon-neutral{
   color: #60A5FA;
 }
+
 
 
 

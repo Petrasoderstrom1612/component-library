@@ -16,12 +16,8 @@ function App() {
           </div>
           {colors.map((one) => (
             <div className="badges-div">
-              <Badge variant="squared" color={one}>
-                Badge
-              </Badge>
-              <Badge variant="rounded" color={one}>
-                Badge
-              </Badge>
+              <Badge variant="squared" color={one}>Badge</Badge>
+              <Badge variant="rounded" color={one}>Badge</Badge>
             </div>
           ))}
         </div>
@@ -30,14 +26,16 @@ function App() {
 
       <>
       <h2 className="h1-banners">Banner</h2>
-          <Banner status="success">Success</Banner>
+          <Banner status="success" title="Congratulations!" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
           <br />
-          <Banner status="warning">Warning</Banner>
+          <Banner status="warning" title="Attention"/>
           <br />
-          <Banner status="error">Error</Banner>
+          <Banner status="error" title="There is a problem with your application" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum."/>
           <br />
-          <Banner status="neutral">Neutral</Banner>
+          <Banner status="neutral" title="Update available"/>
       </>
+      <br />
+      <hr/>
     </>
   );
 }
