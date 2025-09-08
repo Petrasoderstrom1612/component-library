@@ -8,10 +8,10 @@ const Banner = ({children, ...rest}) => {
 console.log(rest)
 
 let statusIcon = ""
-if (rest.status === "success") statusIcon = <FaCircleCheck />
-if (rest.status === "warning") statusIcon = <IoWarning />
-if (rest.status === "error") statusIcon = <HiXCircle />
-if (rest.status === "neutral") statusIcon = <FaCircleInfo />
+if (rest.status === "success") statusIcon = <FaCircleCheck className="icon-success"/>
+if (rest.status === "warning") statusIcon = <IoWarning className="icon-warning"/>
+if (rest.status === "error") statusIcon = <HiXCircle className="icon-error"/>
+if (rest.status === "neutral") statusIcon = <FaCircleInfo className="icon-neutral"/>
 
   return (
     <div>

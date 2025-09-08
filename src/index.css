@@ -99,11 +99,29 @@
   background-color: #FCE7F3;
 }
 
+/***** BANNERS ****/
+
 .h1-banners{
   font-family: Permanent Marker;
   font-weight: 400;
   font-size: 44.1px;
   line-height: 63px;
+}
+
+.icon-success{
+  color: #34D399;
+}
+
+.icon-warning{
+  color: #FBBF24;
+}
+
+.icon-error{
+  color: #F87171;
+}
+
+.icon-neutral{
+  color: #60A5FA;
 }
 
 
