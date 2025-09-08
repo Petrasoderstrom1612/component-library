@@ -181,7 +181,13 @@ p{
   color: #60A5FA;
 }
 
-
+/**** CARD ****/
+.h1-card{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-size: 44.1px;
+  line-height: 63px;
+}
 
 
 
