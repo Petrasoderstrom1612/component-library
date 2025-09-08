@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Banner = ({children}) => {
+const Banner = ({children, ...rest}) => {
+console.log(rest)
   return (
     <div>
       {children}

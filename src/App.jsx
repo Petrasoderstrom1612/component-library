@@ -30,10 +30,13 @@ function App() {
 
       <>
       <h2 className="h1-banners">Banner</h2>
-          <Banner>Success</Banner>
-          <Banner>Warning</Banner>
-          <Banner>Error</Banner>
-          <Banner>Neutral</Banner>
+          <Banner severity="success">Success</Banner>
+          <br />
+          <Banner severity="warning">Warning</Banner>
+          <br />
+          <Banner severity="error">Error</Banner>
+          <br />
+          <Banner severity="neutral">Neutral</Banner>
       </>
     </>
   );
