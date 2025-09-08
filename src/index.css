@@ -8,7 +8,7 @@
 .all-badges{
   display: flex;
   flex-direction:row;
-  gap: 5px;
+  gap: 10px;
 }
 
 .badges-div{
@@ -25,11 +25,17 @@
   padding-left: 12px;
   opacity: 1;
   /* border:1px solid black; */
-  margin-bottom:5px;
+  margin-bottom:10px;
+  text-align: center;
 }
 
 .rounded{
   border-radius: 12px;
+}
+
+.gray{
+  color:#1F2937;
+  background-color: #F3F4F6;
 }
 
 .red{
@@ -40,6 +46,31 @@
 .yellow{
   color:#92400E;
   background-color: #FEF3C7;
+}
+
+.green{
+  color:#065F46;
+  background-color: #D1FAE5;
+}
+
+.blue{
+  color:#1E40AF;
+  background-color: #DBEAFE;
+}
+
+.indigo{
+  color:#3730A3;
+  background-color: #E0E7FF;
+}
+
+.purple{
+  color:#5B21B6;
+  background-color: #EDE9FE;
+}
+
+.pink{
+  color:#9D174D;
+  background-color: #FCE7F3;
 }
 
 

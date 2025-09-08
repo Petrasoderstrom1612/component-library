@@ -2,7 +2,7 @@ import { useState } from "react";
 import Badge from "./Badges/Badge";
 
 function App() {
-  const colors = ["red", "yellow"];
+  const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
 
   return (
     <>
