@@ -3,6 +3,26 @@
   line-height: 1.5;
   font-weight: 400;
   background-color: #e5e7eb;
+  padding:2em;
+}
+
+.h1-badges{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-size: 44.1px;
+  line-height: 63px;
+}
+
+.h2-badge{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-top: 8px;
+  margin-right: 16px;
 }
 
 .all-badges{
