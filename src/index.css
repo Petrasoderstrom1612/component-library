@@ -189,6 +189,18 @@ p{
   line-height: 63px;
 }
 
+.card-div{
+background-color: #F9FAFB; 
+width: 384;
+height: 208;
+padding-right: 24px;
+padding-bottom: 32px;
+padding-left: 24px;
+gap: 32px;
+opacity: 1;
+border-radius: 8px;
+}
+
 
 
 
