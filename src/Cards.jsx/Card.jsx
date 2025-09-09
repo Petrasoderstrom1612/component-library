@@ -1,9 +1,8 @@
 import React from 'react'
 import { MdOutlineFileUpload } from "react-icons/md";
 
-const Card = ({children, className, icon=<MdOutlineFileUpload className="card-icon"/>}) => {
+const Card = ({children, className, icon=<MdOutlineFileUpload className="card-icon"/>, iconCardColor="icon-card-color"}) => {
   console.log(icon)
-  let iconCardColor="icon-card-color"
 
   return (
     <>

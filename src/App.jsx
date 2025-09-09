@@ -3,6 +3,7 @@ import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
 import { HiOutlineCloudUpload } from "react-icons/hi";
+import { RiDeleteBin7Line } from "react-icons/ri";
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
@@ -44,11 +45,15 @@ function App() {
           <div className="cards-flex-div">
           <Card className="card-div" icon={<HiOutlineCloudUpload className="card-icon"/>}>
             <h3 className="h3-card">Easy Deployment</h3>
+            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lorem </p>
+          </Card>
+          <Card className="card-div" iconCardColor="icon-card-orange">
+            <h3 className="h3-card">Fast Download</h3> {/* scenario with no icon provided */}
             <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
           </Card>
-          <Card className="card-div">
-            <h3 className="h3-card">Easy Deployment</h3> {/* scenario with no icon provided */}
-            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
+          <Card className="card-div" icon={<RiDeleteBin7Line className="card-icon"/>}  iconCardColor="icon-card-red">
+            <h3 className="h3-card">Smooth Delete</h3> {/* scenario with no icon provided */}
+            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit lorem ipsum dolor sit amet</p>
           </Card>
           </div>
       </>

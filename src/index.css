@@ -244,6 +244,14 @@ p{
   background-color:#3F75FE;
 }
 
+.icon-card-orange{
+background-color: #ffb300;
+}
+
+.icon-card-red{
+background-color: #e03131;
+}
+
 .h3-card{
   color: #111827;
   margin-top: 0;
