@@ -4,6 +4,7 @@ import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { RiDeleteBin7Line } from "react-icons/ri";
+import Testimonial from "./Testimonials.jsx/Testimonial";
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
@@ -59,6 +60,13 @@ function App() {
       </>
       <br />
       <hr/>
+
+      <Testimonial
+        icon={<RiDeleteBin7Line className="card-icon"/>}
+        title="Workcation"
+        mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+        footer="May Andersons / Workcation, CTO"
+      />
     </>
   );
 }
