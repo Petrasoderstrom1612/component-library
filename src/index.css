@@ -190,17 +190,58 @@ p{
 }
 
 .card-div{
-background-color: #F9FAFB; 
-width: 384;
-height: 208;
-padding-right: 24px;
-padding-bottom: 32px;
-padding-left: 24px;
-gap: 32px;
-opacity: 1;
-border-radius: 8px;
+  background-color: #F9FAFB;
+  width: 335px;
+  height: 195px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  gap: 32px;
+  opacity: 1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+  position: relative;
 }
 
+.icon-div{
+  position: absolute;
+  z-index: 10; 
+  top: -25px;
+  right: 45%;
+  display: inline-block;
+  width: auto;
+  opacity: 1;
+  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon{
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  color:white;
+}
+
+.icon-card-color{
+  background-color:#3F75FE;
+}
+
+.h3-card{
+  color: #111827;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.p-card{
+  color: #6B7280;
+}
 
 
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
+import { HiOutlineCloudUpload } from "react-icons/hi";
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
@@ -40,11 +41,13 @@ function App() {
 
       <>
           <h1 className="h1-card">Card</h1>
-          <Card className="card-div">
-            <h3>Easy Deployment</h3>
-            <p>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
+          <Card className="card-div" icon={<HiOutlineCloudUpload className="card-icon"/>}>
+            <h3 className="h3-card">Easy Deployment</h3>
+            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
           </Card>
       </>
+      <br />
+      <hr/>
     </>
   );
 }
