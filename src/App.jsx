@@ -43,7 +43,7 @@ function App() {
       <>
           <h1 className="h1-card">Card</h1>
           <div className="cards-flex-div">
-          <Card icon={<HiOutlineCloudUpload className="card-icon"/>}>
+          <Card icon={<HiOutlineCloudUpload className="card-icon"/>} style={{ cursor: "pointer" }}>
             <h3 className="h3-card">Easy Deployment</h3>
             <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lorem </p>
           </Card>
