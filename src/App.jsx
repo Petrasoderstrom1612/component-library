@@ -46,8 +46,8 @@ function App() {
             <h3 className="h3-card">Easy Deployment</h3>
             <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
           </Card>
-          <Card className="card-div" icon={<HiOutlineCloudUpload className="card-icon"/>}>
-            <h3 className="h3-card">Easy Deployment</h3>
+          <Card className="card-div">
+            <h3 className="h3-card">Easy Deployment</h3> {/* scenario with no icon provided */}
             <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
           </Card>
           </div>

@@ -191,7 +191,9 @@ p{
 
 .cards-flex-div{
   display: flex;
-  justify-content: space-around;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
 }
 
 .card-div{
@@ -209,6 +211,10 @@ p{
   justify-content: end;
   text-align: center;
   position: relative;
+}
+
+.card-div:hover{
+  box-shadow: 0px 4px 25px 0px #0000001A;
 }
 
 .icon-div{
