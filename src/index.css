@@ -189,6 +189,11 @@ p{
   line-height: 63px;
 }
 
+.cards-flex-div{
+  display: flex;
+  justify-content: space-around;
+}
+
 .card-div{
   background-color: #F9FAFB;
   width: 335px;
