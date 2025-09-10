@@ -264,21 +264,35 @@ background-color: #e03131;
 
 /***** TESTIMONIALS ****/
 
+.h1-testimonial{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-size: 44.1px;
+  line-height: 63px;
+}
+
 .testimonial-div{
+  margin: 0 auto; /* centering Testimonial */
   background-color: #F9FAFB;
   display:flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-family: Inter;
+  max-width: 950px;
+  padding: 3em 0;
 }
 
 .testimonial-div-text{
   max-width: 500px;
 }
 
-.blue-color .icon-testimonial-1 svg,
-.blue-color .icon-testimonial-2 svg{
+.testimonial-h3{
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.blue-color{
   color: #2E59F3;
 }
 
@@ -292,7 +306,10 @@ background-color: #e03131;
   top: 4px;
 }
 
-
+.testimonial-footer-p{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
 
 
 

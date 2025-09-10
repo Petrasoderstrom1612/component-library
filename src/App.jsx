@@ -44,32 +44,35 @@ function App() {
       </>
 
       <>
-          <h1 className="h1-card">Card</h1>
-          <div className="cards-flex-div">
-          <Card icon={<HiOutlineCloudUpload className="card-icon"/>} style={{ cursor: "pointer" }}>
-            <h3 className="h3-card">Easy Deployment</h3>
-            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lorem </p>
-          </Card>
-          <Card iconCardColor="icon-card-orange">
-            <h3 className="h3-card">Fast Download</h3> {/* scenario with no icon provided */}
-            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
-          </Card>
-          <Card icon={<RiDeleteBin7Line className="card-icon"/>}  iconCardColor="icon-card-red" style={{ cursor: "pointer" }}>
-            <h3 className="h3-card">Smooth Delete</h3> {/* scenario with no icon provided */}
-            <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit lorem ipsum dolor sit amet</p>
-          </Card>
-          </div>
+        <h1 className="h1-card">Card</h1>
+        <div className="cards-flex-div">
+        <Card icon={<HiOutlineCloudUpload className="card-icon"/>} style={{ cursor: "pointer" }}>
+          <h3 className="h3-card">Easy Deployment</h3>
+          <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lorem </p>
+        </Card>
+        <Card iconCardColor="icon-card-orange">
+          <h3 className="h3-card">Fast Download</h3> {/* scenario with no icon provided */}
+          <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
+        </Card>
+        <Card icon={<RiDeleteBin7Line className="card-icon"/>}  iconCardColor="icon-card-red" style={{ cursor: "pointer" }}>
+          <h3 className="h3-card">Smooth Delete</h3> {/* scenario with no icon provided */}
+          <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit lorem ipsum dolor sit amet</p>
+        </Card>
+        </div>
       </>
       <br />
       <hr/>
 
-      <Testimonial
-        icon={<GiPalmTree />}
-        icon2={<PiWarehouseDuotone />}
-        title="Workcation"
-        mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
-        footer="May Andersons / Workcation, CTO"
-      />
+      <>
+        <h1 className="h1-testimonial">Testimonials</h1>
+        <Testimonial
+          icon={<GiPalmTree />}
+          icon2={<PiWarehouseDuotone />}
+          title="Workcation"
+          mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+          footer="May Andersons / Workcation, CTO"
+        />
+      </>
     </>
   );
 }
