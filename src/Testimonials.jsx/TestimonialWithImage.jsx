@@ -6,8 +6,8 @@ const TestimonialWithImage = ({icon, mainText, footer, footerProfession}) => {
 
   return (
     <div className="testimonialImg-div">
-      <img src={Person} className="testimonialImg-img" alt="" aria-hidden="true"/>
       <div className="testimonialImg-div-text">
+      <img src={Person} className="testimonialImg-img" alt="" aria-hidden="true"/>
           <img src={Citations} className="testimonialImg-citations" alt="" aria-hidden="true"/>
           <p className="testimonialImg-div-mainText">{mainText}</p>
         <footer>

@@ -421,6 +421,29 @@ height: 315px;
   letter-spacing: 0%;
 }
 
+@media (max-width: 940px) {
+  .testimonialImg-div {
+    max-width: fit-content;
+  }
+
+  .testimonialImg-div-text {
+    max-width: 500px;
+    margin-left: 15px;
+    margin-right: 15px;
+    z-index: 1;
+    padding-top: 220px;
+  }
+
+  .testimonialImg-img {
+    height: 315px;
+    width: 87%;
+    height: 235px; /* or whatever height you want */
+    object-fit: cover;        /* ensures it fills the area */
+    object-position: center;     /* crops from the top */
+    border-radius: 0.5rem;    /* optional rounded corners */
+    margin-left: -20px;
+  }
+}
 
 
 
