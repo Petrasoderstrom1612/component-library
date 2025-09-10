@@ -4,6 +4,8 @@ import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
 import { HiOutlineCloudUpload } from "react-icons/hi";
 import { RiDeleteBin7Line } from "react-icons/ri";
+import { GiPalmTree } from "react-icons/gi";
+import { PiWarehouseDuotone } from "react-icons/pi";
 import Testimonial from "./Testimonials.jsx/Testimonial";
 
 function App() {
@@ -62,7 +64,8 @@ function App() {
       <hr/>
 
       <Testimonial
-        icon={<RiDeleteBin7Line className="card-icon"/>}
+        icon={<GiPalmTree />}
+        icon2={<PiWarehouseDuotone />}
         title="Workcation"
         mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
         footer="May Andersons / Workcation, CTO"

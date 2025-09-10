@@ -262,8 +262,35 @@ background-color: #e03131;
   color: #6B7280;
 }
 
+/***** TESTIMONIALS ****/
 
+.testimonial-div{
+  background-color: #F9FAFB;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Inter;
+}
 
+.testimonial-div-text{
+  max-width: 500px;
+}
+
+.blue-color .icon-testimonial-1 svg,
+.blue-color .icon-testimonial-2 svg{
+  color: #2E59F3;
+}
+
+.icon-testimonial-1{
+  position: relative;
+  left: 9px;
+}
+
+.icon-testimonial-2{
+  position: relative;
+  top: 4px;
+}
 
 
 
