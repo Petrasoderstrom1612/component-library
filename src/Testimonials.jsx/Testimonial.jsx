@@ -19,7 +19,16 @@ const secondHalfTitle = title.slice(middleIndex)
         </h3>
         <p className="testimonial-p">{mainText}</p>
         <footer>
-          <p className="testimonial-footer-p">{footer}</p>
+          <p className="testimonial-footer-p">
+            {footer.includes("/") ? (
+              <>
+              <span className="black-color">{footer.slice(0, footer.indexOf("/"))}</span>
+              <span className="blue-color">/</span>
+              <span className="gray-color">{footer.slice(footer.indexOf("/") + 1)}</span>
+              </>
+            ) : (<span>{footer}</span>)
+            }
+          </p>
         </footer>
       </div>
     </div>
