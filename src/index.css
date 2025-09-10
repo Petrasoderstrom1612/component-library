@@ -289,8 +289,14 @@ background-color: #e03131;
   align-self: baseline;
 }
 
+@media (max-width: 880px) {
+  .background-dots{
+   margin-top: 110px;
+  }
+}
+
 .testimonial-div-text{
-  max-width: 500px;
+  max-width: 450px;
   z-index: 1;
 }
 
