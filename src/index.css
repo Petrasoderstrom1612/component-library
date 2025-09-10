@@ -285,11 +285,13 @@ background-color: #e03131;
 
 .background-dots{
   position: absolute;
-  left: 163px;
+  z-index: 0;
+  align-self: baseline;
 }
 
 .testimonial-div-text{
   max-width: 500px;
+  z-index: 1;
 }
 
 .testimonial-h3, .testimonial-p{
