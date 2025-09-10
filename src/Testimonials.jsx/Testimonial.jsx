@@ -26,7 +26,7 @@ const secondHalfTitle = title.slice(middleIndex)
               <span className="blue-color slash"> / </span>
               <span className="gray-color"> {footer.slice(footer.indexOf("/") + 1)}</span>
               </>
-            ) : (<span>{footer}</span>)
+            ) : (<span className="black-color">{footer}</span>)
             }
           </p>
         </footer>
