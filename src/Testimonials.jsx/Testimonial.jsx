@@ -22,9 +22,9 @@ const secondHalfTitle = title.slice(middleIndex)
           <p className="testimonial-footer-p">
             {footer.includes("/") ? (
               <>
-              <span className="black-color">{footer.slice(0, footer.indexOf("/"))}</span>
+              <span className="black-color">{footer.slice(0, footer.indexOf("/"))} </span>
               <span className="blue-color slash"> / </span>
-              <span className="gray-color">{footer.slice(footer.indexOf("/") + 1)}</span>
+              <span className="gray-color"> {footer.slice(footer.indexOf("/") + 1)}</span>
               </>
             ) : (<span>{footer}</span>)
             }

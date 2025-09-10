@@ -335,14 +335,30 @@ background-color: #e03131;
   margin-block-start: 1em;
   margin-block-end: 1em;
   max-width: 880px;
+  letter-spacing: -0.5px;
 }
 
 .black-color{
   color: black;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.slash{
+  font-weight: 900;
+  margin: 0 4px;
 }
 
 .gray-color{
-  color: gray;
+  color: #6B7280;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 
 
