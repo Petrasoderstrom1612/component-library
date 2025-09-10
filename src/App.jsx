@@ -7,6 +7,7 @@ import { RiDeleteBin7Line } from "react-icons/ri";
 import { GiPalmTree } from "react-icons/gi";
 import { PiWarehouseDuotone } from "react-icons/pi";
 import Testimonial from "./Testimonials.jsx/Testimonial";
+import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
@@ -79,6 +80,12 @@ function App() {
           mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
           footer="Helena Loveless" 
         />    {/* scenario with no slash */}
+        <br />
+        <TestimonialWithImage
+          mainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
+          footer="Rudy Candeleight" 
+          footerProfession="Workcation, CTO" 
+        />    
       </>
     </>
   );

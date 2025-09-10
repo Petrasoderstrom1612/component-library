@@ -369,11 +369,57 @@ background-color: #e03131;
   letter-spacing: 0%;
 }
 
+/***** TESTIMONIALS WITH IMAGES****/
+.testimonialImg-div{
+  margin: 0 auto; /* centering Testimonial */
+  background-color: #2545B8;
+  color:#FFFFFF;
+  display:flex;
+  font-family: Inter;
+  max-width: 950px;
+  padding: 3em 0;
+  max-height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
+.testimonialImg-div-text{
+  max-width: 500px;
+  margin-left: 165px;
+  z-index: 1;
+}
 
+.testimonialImg-citations{
+  height: 35px;
+  width: 35px;
+}
 
+.testimonialImg-div-mainText{
+ margin: 20px 0;
+}
 
+.testimonialImg-img{
+width: 384px;
+height: 464px;
+opacity: 1;
+top: -9px;
+left: 40px;
+border-radius: 12px;
+position: absolute;
+width: auto;
+height: 315px;
+}
 
+.testimonialImg-footer-p{
+  letter-spacing: -0.5px;
+  color:#FFFFFF;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
 
 
 
