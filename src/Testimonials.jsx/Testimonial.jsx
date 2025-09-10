@@ -1,4 +1,5 @@
 import React from 'react'
+import Dots from '../assets/dots.svg';
 
 const Testimonial = ({icon, icon2, title, mainText, footer}) => {
 const middleIndex = Math.floor(title.length/2 -1)
@@ -7,6 +8,7 @@ const secondHalfTitle = title.slice(middleIndex)
 
   return (
     <div className="testimonial-div">
+      <img src={Dots} className="background-dots" alt="" aria-hidden="true"/>
       <div className="testimonial-div-text">
         <h3 className="testimonial-h3">
           <span className="blue-color">

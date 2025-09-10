@@ -283,6 +283,11 @@ background-color: #e03131;
   padding: 3em 0;
 }
 
+.background-dots{
+  position: absolute;
+  left: 163px;
+}
+
 .testimonial-div-text{
   max-width: 500px;
 }
