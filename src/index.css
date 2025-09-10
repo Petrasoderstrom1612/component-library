@@ -317,6 +317,10 @@ background-color: #e03131;
   letter-spacing: -1px;
 }
 
+.testimonial-p{
+  margin: 30px 10px;
+}
+
 .blue-color{
   color: #2E59F3;
 }
