@@ -305,6 +305,10 @@ background-color: #e03131;
   .slash{
     display: none;
   }
+
+  .testimonial-p, .testimonial-footer-p{
+  text-align: left;
+  }
 }
 
 .testimonial-div-text{
