@@ -70,7 +70,14 @@ function App() {
           icon2={<PiWarehouseDuotone />}
           title="Workcation"
           mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
-          footer="May Andersons / Workcation, CTO"
+          footer="May Andersons / Workcation, CTO"/>
+        <br />
+        <Testimonial
+          icon={<GiPalmTree />}
+          icon2={<PiWarehouseDuotone />}
+          title="Staycation"
+          mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
+          footer="Helena Loveless" {/* scenario with no slash / */}
         />
       </>
     </>
