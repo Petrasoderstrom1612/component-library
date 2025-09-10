@@ -13,7 +13,7 @@ const secondHalfTitle = title.slice(middleIndex)
             <span className="icon-testimonial-1">{icon}</span>
             <span className="icon-testimonial-2">{icon2} </span>
           </span>
-          <span className="blue-color">{firstHalfTitle}</span>{secondHalfTitle}
+          {firstHalfTitle}<span className="blue-color">{secondHalfTitle}</span>
         </h3>
         <p>{mainText}</p>
         <footer>
