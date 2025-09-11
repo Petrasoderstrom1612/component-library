@@ -457,6 +457,22 @@ object-position: center;
   line-height: 63px;
 }
 
+.palette-div{
+  width: 384;
+  height: 112;
+  opacity: 1;
+  position: relative;
+}
+
+.tooltip{
+  width: 34px;
+  height: 18px;
+  opacity: 1;
+  bottom: -15px;
+  left: 15px;
+  position: absolute;
+}
+
 .blackish{
   background-color: #262626;
   color: #C7C7C7;

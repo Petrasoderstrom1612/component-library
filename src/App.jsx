@@ -90,8 +90,8 @@ function App() {
         <TestimonialWithImage
           photo={Person2}
           mainText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit."
-          footer="Rudy Candeleight" 
-          footerProfession="Workcation, CTO" 
+          footer="Maria Garcia" 
+          footerProfession="Staycation, CEO" 
         />    
       </>
 
