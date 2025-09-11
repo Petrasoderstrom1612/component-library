@@ -409,6 +409,9 @@ border-radius: 12px;
 position: absolute;
 width: auto;
 height: 315px;
+max-width: 210px;
+object-fit: cover;/* ensures it fills the area */
+object-position: center;
 }
 
 .testimonialImg-footer-p{
@@ -421,7 +424,7 @@ height: 315px;
   letter-spacing: 0%;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 940px) { /* MOBILE */
   .testimonialImg-div {
     max-width: fit-content;
   }
@@ -437,11 +440,12 @@ height: 315px;
   .testimonialImg-img {
     height: 315px;
     width: 87%;
-    height: 235px; /* or whatever height you want */
+    height: 235px;
     object-fit: cover;        /* ensures it fills the area */
     object-position: center;     /* crops from the top */
-    border-radius: 0.5rem;    /* optional rounded corners */
-    margin-left: -20px;
+    border-radius: 0.5rem;
+    margin-left: -5px;
+    max-width: none;
   }
 }
 
