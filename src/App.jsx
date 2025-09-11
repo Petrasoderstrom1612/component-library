@@ -1,9 +1,9 @@
 import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
-import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import Testimonial from "./Testimonials.jsx/Testimonial";
 import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
+import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 
 function App() {
