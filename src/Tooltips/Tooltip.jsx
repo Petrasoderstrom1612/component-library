@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import folderIcon from "./icons/folder.svg"
 import xIcon from "./icons/X.svg"
 
-const Tooltip = ({ palette, title, paragraph }) => {
+const Tooltip = ({ palette, title, paragraph, ...rest }) => {
   const divRef = useRef(null);
   const [bgColor, setBgColor] = useState("black");
 

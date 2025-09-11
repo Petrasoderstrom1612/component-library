@@ -98,12 +98,22 @@ function App() {
       <>
         <h1 className="h1-tooltips">Tooltip</h1>
         { palettes.map((onePalette, index) => (
+          <div className="tooltip-divs">
           <Tooltip 
-          key = {onePalette} 
-          palette = {onePalette}
-          title = "Archive notes"
-          paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
-          />
+            variant="dark"
+            key={onePalette} 
+            palette ={onePalette}
+            title="Archive notes"
+            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+            />
+            <Tooltip 
+            variant="light"
+            key={onePalette + "-light"} 
+            palette ={onePalette}
+            title="Archive notes"
+            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+            />
+          </div>
         ))
         }
       </>
