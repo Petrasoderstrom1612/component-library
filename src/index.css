@@ -475,12 +475,14 @@ object-position: center;
   height: 112;
   opacity: 1;
   position: relative;
+  display: inline-block; /*only the width needed to fit content*/
+  border-radius:10px;
 }
 
 .tooltip{
   opacity: 1;
   bottom: -15px;
-  left: 15px;
+  left: 60px;
   position: absolute;
   width: 0;
   height: 0;
@@ -488,7 +490,6 @@ object-position: center;
   border-right: 17px solid transparent;
   border-top: 18px solid var(--bg-color);
 }
-
 
 .blackish{
   background-color: #262626;
@@ -510,9 +511,32 @@ object-position: center;
   color: #E3FFE9;
 }
 
+.tooltip-h3{
+  margin: 0 20px 10px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
 
+.tooltip-text-div{
+  padding:2em;
+}
 
+.icons-titel-tooltip-div{
+  display:flex;
+}
 
+.cross-icon-tooltip{
+  margin-left: auto;
+}
+
+.tooltip-p{
+  max-width: 400px;
+  margin-left: 38px;
+  margin-right: 38px;
+}
 
 
 
