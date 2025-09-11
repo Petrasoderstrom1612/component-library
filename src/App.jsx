@@ -3,11 +3,13 @@ import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
 import Testimonial from "./Testimonials.jsx/Testimonial";
 import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
+import Tooltip from "./Tooltips/Tooltip.jsx";
 import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
+  const palettes = ["blackish", "blueish", "magentaish", "greenish"]
 
   return (
     <>
@@ -19,9 +21,9 @@ function App() {
             <h2 className="h2-badge">Pill</h2>
           </div>
           {colors.map((one, index) => (
-            <div className="badges-div">
-              <Badge variant="squared" color={one}>{colors[index]}</Badge>
-              <Badge variant="rounded" color={one}>{colors[index]}</Badge>
+            <div key={one} className="badges-div">
+              <Badge variant="squared" color={one}>{one}</Badge>
+              <Badge variant="rounded" color={one}>{colors[index].toUpperCase()}</Badge>
             </div>
           ))}
         </div>
@@ -91,6 +93,16 @@ function App() {
           footer="Rudy Candeleight" 
           footerProfession="Workcation, CTO" 
         />    
+      </>
+
+      <>
+        <h1 className="h1-tooltips">Tooltip</h1>
+        { palettes.map((onePalette, index) => (
+        <Tooltip key={onePalette} palette={onePalette}>
+          <h3>Archive notes</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</p>
+        </Tooltip>))
+        }
       </>
     </>
   );

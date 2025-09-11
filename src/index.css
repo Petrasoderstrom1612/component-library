@@ -449,9 +449,33 @@ object-position: center;
   }
 }
 
+/* TOOLTIP */
+.h1-tooltips{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-size: 44.1px;
+  line-height: 63px;
+}
 
+.blackish{
+  background-color: #262626;
+  color: #C7C7C7;
+}
 
+.blueish{
+  background-color: #1E40AF;
+  color: #E8EDFF;
+}
 
+.magentaish{
+  background-color: #A9229B;
+  color: #FFE9FD;
+}
+
+.greenish{
+  background-color: #47AA5D;
+  color: #E3FFE9;
+}
 
 
 
