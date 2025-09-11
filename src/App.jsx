@@ -18,10 +18,10 @@ function App() {
             <h2 className="h2-badge">Square</h2>
             <h2 className="h2-badge">Pill</h2>
           </div>
-          {colors.map((one) => (
+          {colors.map((one, index) => (
             <div className="badges-div">
-              <Badge variant="squared" color={one}>Badge</Badge>
-              <Badge variant="rounded" color={one}>Badge</Badge>
+              <Badge variant="squared" color={one}>{colors[index]}</Badge>
+              <Badge variant="rounded" color={one}>{colors[index]}</Badge>
             </div>
           ))}
         </div>
