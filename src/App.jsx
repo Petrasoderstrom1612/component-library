@@ -2,14 +2,10 @@ import { useState } from "react";
 import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
-import { HiOutlineCloudUpload } from "react-icons/hi";
-import { RiDeleteBin7Line } from "react-icons/ri";
-import { GiPalmTree } from "react-icons/gi";
-import { PiWarehouseDuotone } from "react-icons/pi";
+import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import Testimonial from "./Testimonials.jsx/Testimonial";
 import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
-import Person from "./Testimonials.jsx/person.jpg"
-import Person2 from "./Testimonials.jsx/person2.png"
+import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
@@ -49,7 +45,7 @@ function App() {
       <>
         <h1 className="h1-card">Card</h1>
         <div className="cards-flex-div">
-        <Card icon={<HiOutlineCloudUpload className="card-icon"/>} style={{ cursor: "pointer" }}>
+        <Card icon={<CloudUpload className="card-icon"/>} style={{ cursor: "pointer" }}>
           <h3 className="h3-card">Easy Deployment</h3>
           <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lorem </p>
         </Card>
@@ -57,7 +53,7 @@ function App() {
           <h3 className="h3-card">Fast Download</h3> {/* scenario with no icon provided */}
           <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis</p>
         </Card>
-        <Card icon={<RiDeleteBin7Line className="card-icon"/>}  iconCardColor="icon-card-red" style={{ cursor: "pointer" }}>
+        <Card icon={<Trashbin className="card-icon"/>}  iconCardColor="icon-card-red" style={{ cursor: "pointer" }}>
           <h3 className="h3-card">Smooth Delete</h3> {/* scenario with no icon provided */}
           <p className="p-card">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit lorem ipsum dolor sit amet</p>
         </Card>
@@ -69,15 +65,15 @@ function App() {
       <>
         <h1 className="h1-testimonial">Testimonials</h1>
         <Testimonial
-          icon={<GiPalmTree />}
-          icon2={<PiWarehouseDuotone />}
+          icon={<PalmTree />}
+          icon2={<Garrage />}
           title="Workcation"
           mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
           footer="May Andersons / Workcation, CTO"/>
         <br />
         <Testimonial
-          icon={<GiPalmTree />}
-          icon2={<PiWarehouseDuotone />}
+          icon={<PalmTree />}
+          icon2={<Garrage />}
           title="Staycation"
           mainText="“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”"
           footer="Helena Loveless" 
