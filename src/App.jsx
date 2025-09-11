@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
