@@ -4,6 +4,7 @@
   font-weight: 400;
   background-color: #e5e7eb;
   padding:2em;
+  --tooltip-color: red;
 }
 
 p{
@@ -457,6 +458,18 @@ object-position: center;
   line-height: 63px;
 }
 
+/* 
+:root {
+  --blackish-bg: #262626;
+  --blackish-text: #C7C7C7;
+  --blueish-bg: #1E40AF;
+  --blueish-text: #E8EDFF;
+  --magentaish-bg: #A9229B;
+  --magentaish-text: #FFE9FD;
+  --greenish-bg: #47AA5D;
+  --greenish-text: #E3FFE9;
+} */
+
 .palette-div{
   width: 384;
   height: 112;
@@ -465,13 +478,17 @@ object-position: center;
 }
 
 .tooltip{
-  width: 34px;
-  height: 18px;
   opacity: 1;
   bottom: -15px;
   left: 15px;
   position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 18px solid var(--bg-color);
 }
+
 
 .blackish{
   background-color: #262626;

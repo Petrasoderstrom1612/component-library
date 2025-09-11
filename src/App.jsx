@@ -98,10 +98,13 @@ function App() {
       <>
         <h1 className="h1-tooltips">Tooltip</h1>
         { palettes.map((onePalette, index) => (
-        <Tooltip key={onePalette} palette={onePalette}>
-          <h3>Archive notes</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</p>
-        </Tooltip>))
+          <Tooltip 
+          key = {onePalette} 
+          palette = {onePalette}
+          title = "Archive notes"
+          paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+          />
+        ))
         }
       </>
     </>
