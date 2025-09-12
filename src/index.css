@@ -482,27 +482,31 @@ object-position: center;
   height: 0;
   border-left: 17px solid transparent;
   border-right: 17px solid transparent;
-  border-top: 18px solid var(--bg-color);
+  /* background-color comes from inline style */
 }
 
 .blackish{
   background-color: #262626;
   color: #C7C7C7;
+  --accent-color: #FFFFFF; /* your own made up property*/
 }
 
 .blueish{
   background-color: #1E40AF;
   color: #E8EDFF;
+  --accent-color: #FFFFFF;
 }
 
 .magentaish{
   background-color: #A9229B;
   color: #FFE9FD;
+  --accent-color: #FFFFFF;
 }
 
 .greenish{
   background-color: #47AA5D;
   color: #E3FFE9;
+  --accent-color: #FFFFFF;
 }
 
 .tooltip-h3{

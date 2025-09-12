@@ -4,12 +4,16 @@ import xIcon from "./icons/X.svg"
 
 const Tooltip = ({ palette, title, paragraph, ...rest }) => {
   const divRef = useRef(null); //it is standart to declare ref as null
+  const [Color, setColor] = useState("");
   const [bgColor, setBgColor] = useState("");
+  const [accentColor, setAccentColor] = useState("");
 
   useEffect(() => {
     if (divRef.current) {
-      const color = getComputedStyle(divRef.current).backgroundColor; //access the DOM to get backgroundcolor of the element where ref is placed
-      setBgColor(color); //save the color you get into state
+      const style = getComputedStyle(divRef.current) //access the DOM to get CSS properties of the element where ref is placed. (style is not a fixed word)
+      setColor(style.color); //save the color you get into state
+      setBgColor(style.backgroundColor); //save the color you get into state
+      setAccentColor(style.getPropertyValue("--accent-color")); //save the color you get into state
     }
   }, [palette]);
 
@@ -19,7 +23,7 @@ const Tooltip = ({ palette, title, paragraph, ...rest }) => {
       <div className="tooltip-text-div">
         <div className="icons-titel-tooltip-div">
             <img className={{palette}} src={folderIcon} alt="Folder" />
-            <h3 className="tooltip-h3">{title}</h3>
+            <h3 className="tooltip-h3" style={{color: accentColor}}>{title}</h3>
             <img className={`cross-icon-tooltip ${palette}`} src={xIcon} alt="Folder" />
         </div>
         <p className="tooltip-p">{paragraph}</p>
