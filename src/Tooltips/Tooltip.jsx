@@ -4,7 +4,7 @@ import xIcon from "./icons/X.svg"
 
 const Tooltip = ({ palette, title, paragraph, ...rest }) => {
   const divRef = useRef(null); //it is standart to declare ref as null
-  const [Color, setColor] = useState("");
+  const [color, setColor] = useState("");
   const [bgColor, setBgColor] = useState("");
   const [accentColor, setAccentColor] = useState("");
 
@@ -22,11 +22,11 @@ const Tooltip = ({ palette, title, paragraph, ...rest }) => {
       <div className="tooltip" style={{ borderTop: `18px solid ${bgColor}` }}></div> {/* place the color from state to the tooltip element*/}
       <div className="tooltip-text-div">
         <div className="icons-titel-tooltip-div">
-            <img className={{palette}} src={folderIcon} alt="Folder" />
+            <img style={{color: color}} src={folderIcon} alt="Folder" />
             <h3 className="tooltip-h3" style={{color: accentColor}}>{title}</h3>
-            <img className={`cross-icon-tooltip ${palette}`} src={xIcon} alt="Folder" />
+            <img className="cross-icon-tooltip" style={{color: color}} src={xIcon} alt="Folder" />
         </div>
-        <p className="tooltip-p">{paragraph}</p>
+        <p className="tooltip-p" style={{color: color}}>{paragraph}</p>
       </div>
     </div>
   );
