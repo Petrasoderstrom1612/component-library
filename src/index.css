@@ -463,18 +463,6 @@ object-position: center;
   gap: 2em;
 }
 
-/* 
-:root {
-  --blackish-bg: #262626;
-  --blackish-text: #C7C7C7;
-  --blueish-bg: #1E40AF;
-  --blueish-text: #E8EDFF;
-  --magentaish-bg: #A9229B;
-  --magentaish-text: #FFE9FD;
-  --greenish-bg: #47AA5D;
-  --greenish-text: #E3FFE9;
-} */
-
 .palette-div{
   width: 384;
   height: 112;
@@ -548,6 +536,18 @@ object-position: center;
 
 
 
+
+/* 
+:root {
+  --blackish-bg: #262626;
+  --blackish-text: #C7C7C7;
+  --blueish-bg: #1E40AF;
+  --blueish-text: #E8EDFF;
+  --magentaish-bg: #A9229B;
+  --magentaish-text: #FFE9FD;
+  --greenish-bg: #47AA5D;
+  --greenish-text: #E3FFE9;
+} */
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
