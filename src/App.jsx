@@ -4,6 +4,7 @@ import Card from "./Cards.jsx/Card";
 import Testimonial from "./Testimonials.jsx/Testimonial";
 import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
 import Tooltip from "./Tooltips/Tooltip.jsx";
+import Toast from "./TToast.jsx";
 import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 
@@ -118,13 +119,13 @@ function App() {
       
       <>
       <h1 className="h1-toasts">Toasts</h1>
-          <Banner status="success" title="Success" text="Your work has been saved"/>
+          <Toast status="success" title="Success" text="Your work has been saved"/>
           <br />
-          <Banner status="warning" title="Warning" text="A network error was detected"/>
+          <Toast status="warning" title="Warning" text="A network error was detected"/>
           <br />
-          <Banner status="information" title="Information" text="Please read updated information"/>
+          <Toast status="information" title="Information" text="Please read updated information"/>
           <br />
-          <Banner status="error" title="Error" text="Please re-save your work again"/>
+          <Toast status="error" title="Error" text="Please re-save your work again"/>
       <br />
       <hr/>
       </>

@@ -1,19 +1,16 @@
 import React from 'react'
-import { FaCircleCheck } from "react-icons/fa6";
-import { IoWarning } from "react-icons/io5";
-import { HiXCircle } from "react-icons/hi";
-import { FaCircleInfo } from "react-icons/fa6";
+import { Checked, Exclamation, Error, Info } from "../assets/icons";
 
-const toast = ({...rest}) => {
+const Toast = ({...rest}) => {
 console.log(rest)
 
 let bannerClass = rest.status
 
 let statusIcon = ""
-if (rest.status === "success") statusIcon = <FaCircleCheck className="icon-success"/> 
-if (rest.status === "warning") statusIcon = <IoWarning className="icon-warning"/>
-if (rest.status === "error") statusIcon = <HiXCircle className="icon-error"/>
-if (rest.status === "neutral") statusIcon = <FaCircleInfo className="icon-neutral"/>
+if (rest.status === "success") statusIcon = <Checked className="icon-success"/> 
+if (rest.status === "warning") statusIcon = <Exclamation className="icon-warning"/>
+if (rest.status === "error") statusIcon = <Error className="icon-error"/>
+if (rest.status === "neutral") statusIcon = <Info className="icon-neutral"/>
 
   return (
       <div className={`banner-div ${bannerClass}`}>
@@ -26,4 +23,6 @@ if (rest.status === "neutral") statusIcon = <FaCircleInfo className="icon-neutra
   )
 }
 
-export default toast
+export default Toast
+
+

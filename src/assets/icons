@@ -4,6 +4,10 @@ import { GiPalmTree } from "react-icons/gi";
 import { PiWarehouseDuotone } from "react-icons/pi";
 import { PiTrayBold } from "react-icons/pi";
 import { RxCross1 } from "react-icons/rx";
+import { FaCircleCheck } from "react-icons/fa6";
+import { IoWarning } from "react-icons/io5";
+import { HiXCircle } from "react-icons/hi";
+import { FaCircleInfo } from "react-icons/fa6";
 
 
 export {
@@ -13,4 +17,8 @@ export {
     PiWarehouseDuotone as Garrage, 
     PiTrayBold as Tray,
     RxCross1 as Cross,
+    FaCircleCheck as Checked,
+    IoWarning as Exclamation,
+    HiXCircle as Error,
+    FaCircleInfo as Info
 }
