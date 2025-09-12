@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import folderIcon from "./icons/folder.svg"
-import xIcon from "./icons/X.svg"
+import {Tray, Cross} from "../assets/icons"
 
 const Tooltip = ({ palette, title, paragraph, theme }) => {
   console.log(theme)
@@ -28,9 +27,9 @@ const Tooltip = ({ palette, title, paragraph, theme }) => {
       <div className="tooltip" style={{ borderTop: `18px solid ${bgColor}` }}></div> {/* place the color from state to the tooltip element*/}
       <div className="tooltip-text-div">
         <div className="icons-titel-tooltip-div">
-            <img style={{color: `${color}`}} src={folderIcon} alt="Folder" />
+            <Tray style={{color: `${color}`}}/>
             <h3 className="tooltip-h3" style={{color: `${color}`}}>{title}</h3>
-            <img className="cross-icon-tooltip" style={{color: `${color}`}} src={xIcon} alt="Folder" />
+            <Cross className="cross-icon-tooltip" style={{color: `${color}`}}/>
         </div>
         <p className="tooltip-p" style={{color: `${color}`}}>{paragraph}</p>
       </div>

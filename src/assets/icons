@@ -2,10 +2,15 @@ import { HiOutlineCloudUpload } from "react-icons/hi";
 import { RiDeleteBin7Line } from "react-icons/ri";
 import { GiPalmTree } from "react-icons/gi";
 import { PiWarehouseDuotone } from "react-icons/pi";
+import { PiTrayBold } from "react-icons/pi";
+import { RxCross1 } from "react-icons/rx";
+
 
 export {
     HiOutlineCloudUpload as CloudUpload, 
     RiDeleteBin7Line as Trashbin, 
     GiPalmTree as PalmTree, 
-    PiWarehouseDuotone as Garrage 
+    PiWarehouseDuotone as Garrage, 
+    PiTrayBold as Tray,
+    RxCross1 as Cross,
 }
