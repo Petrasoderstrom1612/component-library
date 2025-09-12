@@ -115,7 +115,21 @@ function App() {
         ))
         }
       </>
+      
+      <>
+      <h1 className="h1-toasts">Toasts</h1>
+          <Banner status="success" title="Congratulations!" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
+          <br />
+          <Banner status="warning" title="Attention"/>
+          <br />
+          <Banner status="error" title="There is a problem with your application" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum."/>
+          <br />
+          <Banner status="neutral" title="Update available"/>
+      <br />
+      <hr/>
+      </>
     </>
+
   );
 }
 

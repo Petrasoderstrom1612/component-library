@@ -550,6 +550,13 @@ object-position: center;
   margin-right: 38px;
 }
 
+/* TOOLTIP */
+.h1-toasts{
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-size: 44.1px;
+  line-height: 63px;
+}
 
 
 
