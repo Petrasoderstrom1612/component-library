@@ -21,7 +21,7 @@ function App() {
             <h2 className="h2-badge">Pill</h2>
           </div>
           {colors.map((one, index) => (
-            <div key={one} className="badges-div">
+            <div key={`${one}-${index}`} className="badges-div">
               <Badge variant="squared" color={one}>{one}</Badge>
               <Badge variant="rounded" color={one}>{colors[index].toUpperCase()}</Badge>
             </div>
@@ -98,18 +98,16 @@ function App() {
       <>
         <h1 className="h1-tooltips">Tooltip</h1>
         { palettes.map((onePalette, index) => (
-          <div className="tooltip-divs">
+          <div key={`${onePalette}-${index}`} className="tooltip-divs">
           <Tooltip 
-            variant="dark"
-            key={onePalette} 
+            theme="dark"
             palette ={onePalette}
             title="Archive notes"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
             />
             <Tooltip 
-            variant="light"
-            key={onePalette + "-light"} 
-            palette ={onePalette}
+            theme="light"
+            palette={onePalette}
             title="Archive notes"
             paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
             />
