@@ -192,9 +192,9 @@ p{
 
 .cards-flex-div{
   display: flex;
-    justify-content: center;
-    gap: 4em;
-    flex-wrap: wrap;
+  justify-content: center;
+  gap: 4em;
+  flex-wrap: wrap;
 }
 
 .card-div{
@@ -460,7 +460,8 @@ object-position: center;
 
 .tooltip-divs{
   display: flex;
-  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .palette-div{
@@ -470,7 +471,7 @@ object-position: center;
   position: relative;
   display: inline-block; /*only the width needed to fit content*/
   border-radius:10px;
-  margin-bottom: 60px;
+  margin: 0 20px 60px;
 }
 
 .tooltip{
@@ -510,7 +511,7 @@ object-position: center;
 }
 
 .tooltip-h3{
-  margin: 0 20px 10px;
+  margin: 2px 13px 10px;
   font-family: Inter;
   font-weight: 500;
   font-size: 16px;
@@ -526,8 +527,16 @@ object-position: center;
   display:flex;
 }
 
+.tray-icon-tooltip{
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+}
+
 .cross-icon-tooltip{
-  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  margin-left: auto; /* to be all the way to the right */
 }
 
 .tooltip-p{

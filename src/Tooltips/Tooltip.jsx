@@ -27,8 +27,8 @@ const Tooltip = ({ palette, title, paragraph, theme }) => {
       <div className="tooltip" style={{ borderTop: `18px solid ${bgColor}` }}></div> {/* place the color from state to the tooltip element*/}
       <div className="tooltip-text-div">
         <div className="icons-titel-tooltip-div">
-            <Tray style={{color: `${color}`}}/>
-            <h3 className="tooltip-h3" style={{color: `${color}`}}>{title}</h3>
+            <Tray className="tray-icon-tooltip" style={{color: `${color}`}}/>
+            <h3 className="tooltip-h3" style={{color: `${accentColor}`}}>{title}</h3>
             <Cross className="cross-icon-tooltip" style={{color: `${color}`}}/>
         </div>
         <p className="tooltip-p" style={{color: `${color}`}}>{paragraph}</p>
