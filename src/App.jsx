@@ -118,13 +118,13 @@ function App() {
       
       <>
       <h1 className="h1-toasts">Toasts</h1>
-          <Banner status="success" title="Congratulations!" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
+          <Banner status="success" title="Success" text="Your work has been saved"/>
           <br />
-          <Banner status="warning" title="Attention"/>
+          <Banner status="warning" title="Warning" text="A network error was detected"/>
           <br />
-          <Banner status="error" title="There is a problem with your application" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum."/>
+          <Banner status="information" title="Information" text="Please read updated information"/>
           <br />
-          <Banner status="neutral" title="Update available"/>
+          <Banner status="error" title="Error" text="Please re-save your work again"/>
       <br />
       <hr/>
       </>
