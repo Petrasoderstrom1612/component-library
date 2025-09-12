@@ -19,6 +19,11 @@ const Tooltip = ({ palette, title, paragraph, theme }) => {
       setColor(style.backgroundColor);
       setBgColor(style.color);
       setAccentColor(style.backgroundColor);
+        if(palette === "blackish"){
+          setColor("#6B7280");
+          setBgColor(style.getPropertyValue("--accent-color"));
+          setAccentColor(style.backgroundColor);
+        }
     }
   }, [palette, theme]);
 
