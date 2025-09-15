@@ -25,7 +25,7 @@ function App() {
     if (current < messages.length) {
       const timer = setTimeout(() => {
         setCurrent((prev) => prev + 1);
-      }, 1000); // move to next after 5s
+      }, 5000); // move to next after x ms
       return () => clearTimeout(timer);
     }
   }, [current, messages.length]);
@@ -146,7 +146,7 @@ function App() {
           status={messages[current].status}
           title={messages[current].title}
           text={messages[current].text}
-          duration={5000}
+          duration={7000} //how long this stays visible
           onClose={() => {}}
         />
       )}
