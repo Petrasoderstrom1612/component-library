@@ -95,6 +95,8 @@ function App() {
           footerProfession="Staycation, CEO" 
         />    
       </>
+      <br />
+      <hr/>
 
       <>
         <h1 className="h1-tooltips">Tooltip</h1>
@@ -116,6 +118,8 @@ function App() {
         ))
         }
       </>
+      <br />
+      <hr/>
       
       <>
       <h1 className="h1-toasts">Toasts</h1>
@@ -126,8 +130,6 @@ function App() {
           <Toast status="information" title="Information" text="Please read updated information"/>
           <br />
           <Toast status="error" title="Error" text="Please re-save your work again"/>
-      <br />
-      <hr/>
       </>
     </>
 

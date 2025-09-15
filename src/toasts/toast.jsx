@@ -4,7 +4,7 @@ import { Checked, Exclamation, Error, Info } from "../assets/icons";
 const Toast = ({...rest}) => {
 console.log(rest)
 
-let toastClass = rest.status
+let toastClass = rest.status + "-toast"
 
 let statusIcon = ""
 if (rest.status === "success") statusIcon = <Checked className="icon-success"/> 
