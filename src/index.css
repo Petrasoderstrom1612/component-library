@@ -583,7 +583,12 @@ object-position: center;
   border-radius: 6px;
   padding: 16px;
   /* max-width: fit-content; */
-  width:260px;
+  width:260px;  
+  /* POSITION */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .toast-icon-div{

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Badge from "./Badges/Badge";
 import Banner from "./Banners.jsx/Banner";
 import Card from "./Cards.jsx/Card";
@@ -11,6 +12,23 @@ import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 function App() {
   const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple"];
   const palettes = ["blackish", "blueish", "magentaish", "greenish"]
+  const messages = [
+  { status: "success", title: "Success", text: "Your work has been saved" },
+  { status: "warning", title: "Warning", text: "A network error was detected" },
+  { status: "information", title: "Information", text: "Please read updated information" },
+  { status: "error", title: "Error", text: "Please re-save your work again" },
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (current < messages.length) {
+      const timer = setTimeout(() => {
+        setCurrent((prev) => prev + 1);
+      }, 1000); // move to next after 5s
+      return () => clearTimeout(timer);
+    }
+  }, [current, messages.length]);
 
   return (
     <>
@@ -123,13 +141,15 @@ function App() {
       
       <>
       <h1 className="h1-toasts">Toasts</h1>
-          <Toast status="success" title="Success" text="Your work has been saved"/>
-          <br />
-          <Toast status="warning" title="Warning" text="A network error was detected"/>
-          <br />
-          <Toast status="information" title="Information" text="Please read updated information"/>
-          <br />
-          <Toast status="error" title="Error" text="Please re-save your work again"/>
+      {current < messages.length && (
+        <Toast
+          status={messages[current].status}
+          title={messages[current].title}
+          text={messages[current].text}
+          duration={5000}
+          onClose={() => {}}
+        />
+      )}
       </>
     </>
 

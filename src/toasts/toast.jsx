@@ -1,23 +1,34 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 import { Checked, Exclamation, Error, Info } from "../assets/icons";
 
-const Toast = ({...rest}) => {
-console.log(rest)
+const Toast = ({ status, title, text, duration = 5000, onClose }) => {
+const [visible, setVisible] = useState(true);
 
-let toastClass = rest.status + "-toast"
+useEffect(() => {
+  const timer = setTimeout(() => {
+  setVisible(false);
+  if (onClose) onClose();
+  }, duration);
+
+  return () => clearTimeout(timer);
+}, [duration, onClose]);
+
+if (!visible) return null;
+
+let toastClass = status + "-toast"
 
 let statusIcon = ""
-if (rest.status === "success") statusIcon = <Checked className="icon-success"/> 
-if (rest.status === "warning") statusIcon = <Exclamation className="icon-warning"/>
-if (rest.status === "information") statusIcon = <Info className="icon-information"/>
-if (rest.status === "error") statusIcon = <Error className="icon-error"/>
+if (status === "success") statusIcon = <Checked className="icon-success"/> 
+if (status === "warning") statusIcon = <Exclamation className="icon-warning"/>
+if (status === "information") statusIcon = <Info className="icon-information"/>
+if (status === "error") statusIcon = <Error className="icon-error"/>
 
   return (
       <div className={`toast-div ${toastClass}`}>
         <div className="toast-icon-div">{statusIcon}</div> 
         <div className="toast-ps-div">
-            <p className="toast-p-title">{rest.title}</p>
-            {rest.text && <p>{rest.text}</p>}
+            <p className="toast-p-title">{title}</p>
+            {text && <p>{text}</p>}
         </div>
       </div>
   )
