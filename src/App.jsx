@@ -5,7 +5,7 @@ import Card from "./Cards.jsx/Card";
 import Testimonial from "./Testimonials.jsx/Testimonial";
 import TestimonialWithImage from "./Testimonials.jsx/TestimonialWithImage";
 import Tooltip from "./Tooltips/Tooltip.jsx";
-import Toast from "./Toasts/Toast.jsx";
+import Toasts from "./Toasts/Toasts.jsx";
 import {CloudUpload, Trashbin, PalmTree, Garrage} from "./assets/icons"
 import {Person, Person2} from "./Testimonials.jsx/photos/index.jsx"
 
@@ -142,7 +142,7 @@ function App() {
       <>
       <h1 className="h1-toasts">Toasts</h1>
       {current < messages.length && (
-        <Toast
+        <Toasts
           status={messages[current].status}
           title={messages[current].title}
           text={messages[current].text}
