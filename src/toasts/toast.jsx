@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Checked, Exclamation, Error, Info } from "../assets/icons";
 
-const Toast = ({ status, title, text, duration = 5000, onClose }) => {
+const Toast = ({ status, title, text, duration, onClose }) => {
 const [visible, setVisible] = useState(true);
 
 useEffect(() => {
