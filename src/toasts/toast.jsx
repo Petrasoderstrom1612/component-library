@@ -35,5 +35,5 @@ if (status === "error") statusIcon = <Error className="icon-error"/>
 }
 
 export default Toast
-
+ 
 
